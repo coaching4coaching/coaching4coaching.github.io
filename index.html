@@ -33,14 +33,13 @@
               Person called <i>coache</i> supports and leads the client (called sometime <i>coachee</i>) to come with best approach for given objective. 
               It is very important to state that the coache does not give adivces. It is up to the coachee to define the actions. Throughout the sessions, the coach stays neutral and only guids the client.
               Thanks to coaching, the client breaks all the big problems down into smaller problems so they can be solved individually. By focuses on "now and here", the achivment of the goals becomes more real.
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nFx6yKZrzco" allowfullscreen></iframe>
-              </div>
             </p>
+            <div>
+              <img class="img-responsive" src="https://img.youtube.com/vi/nFx6yKZrzco/sddefault.jpg" onClick="loadYoutubeVideo(this, 'https://youtu.be/nFx6yKZrzco')"/>
+            </div>
             <h2 id="how_coaching_works" class="mt-5 pt-5 pb-1 mb-3 border-bottom">How coaching works</h2>
             <p>
               alsdjf; alkjdsf lakjdsfa lsdkfaldsjf laksdjf alkdfjalskdf
-              <img class="img-responsive" src="https://img.youtube.com/vi/nFx6yKZrzco/sddefault.jpg"/>
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UY75MQte4RU" allowfullscreen></iframe>
               </div>
@@ -92,6 +91,10 @@
             navbarContent.classList.add("collapse");
           }
         });
+      function loadYoutubeVideo(img, url) {
+        var video = document.createElement('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nFx6yKZrzco" allowfullscreen></iframe></div>');
+        img.parentNode.replaceChild(video, img);
+      }
     </script>
 </body>
 </html>
