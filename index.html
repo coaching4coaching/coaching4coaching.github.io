@@ -8,6 +8,7 @@
       body { margin-top:50px; }
       .youtube {
         position:relative;
+        cursor: pointer;
       }
       .youtube .play-button {
         width: 90px;
@@ -71,9 +72,10 @@
             <h2 id="how_coaching_works" class="mt-5 pt-5 pb-1 mb-3 border-bottom">How coaching works</h2>
             <p>
               alsdjf; alkjdsf lakjdsfa lsdkfaldsjf laksdjf alkdfjalskdf
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UY75MQte4RU" allowfullscreen></iframe>
-              </div>
+            <div class="youtube">
+              <div class="play-button" onClick="loadYoutubeVideo(this, 'https://youtu.be/UY75MQte4RU')"></div>
+              <img class="img-responsive" src="https://img.youtube.com/vi/UY75MQte4RU/sddefault.jpg" onClick="loadYoutubeVideo(this, 'https://youtu.be/UY75MQte4RU')"/>
+            </div>
             </p>
             <h2 id="coaching_mentoring_counseling" class="mt-5 pt-5 pb-1 mb-3 border-bottom">Coaching vs Mentoring vs Counseling</h2>
             ads fklasd ;laskdj f;laksjd flakdsjfl ajsdlkf ja;dslkfjalsdkfjalskdjf alksdjfalks jdflaksjdflaskdjf
