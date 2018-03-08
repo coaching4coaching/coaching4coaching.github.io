@@ -92,8 +92,7 @@
           }
         });
       function loadYoutubeVideo(img, url) {
-        var video = document.createElement('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nFx6yKZrzco" allowfullscreen></iframe></div>');
-        img.parentNode.replaceChild(video, img);
+        img.parentNode.innerHTML = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nFx6yKZrzco" allowfullscreen></iframe></div>';
       }
     </script>
 </body>
