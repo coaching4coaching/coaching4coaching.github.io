@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
       body { margin-top:50px; }
+      .youtube {
+        position:relative;
+      }
       .youtube .play-button {
         width: 90px;
         height: 60px;
@@ -62,7 +65,7 @@
               Thanks to coaching, the client breaks all the big problems down into smaller problems so they can be solved individually. By focuses on "now and here", the achivment of the goals becomes more real.
             </p>
             <div class="youtube">
-              <div class="play-button"></div>
+              <div class="play-button" onClick="loadYoutubeVideo(this, 'https://youtu.be/nFx6yKZrzco')"></div>
               <img class="img-responsive" src="https://img.youtube.com/vi/nFx6yKZrzco/sddefault.jpg" onClick="loadYoutubeVideo(this, 'https://youtu.be/nFx6yKZrzco')"/>
             </div>
             <h2 id="how_coaching_works" class="mt-5 pt-5 pb-1 mb-3 border-bottom">How coaching works</h2>
