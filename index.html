@@ -77,13 +77,20 @@
       var navbarContent = document.getElementById("navbarContent");
       var navbarToggler = document.getElementById("navbarToggler");
       navbarToggler.addEventListener("click", 
-      function() {
-        if (navbarContent.classList.contains("collapse")) {
-          navbarContent.classList.remove("collapse");
-        } else {
-          navbarContent.classList.add("collapse");
-        }
-      });
+        function(event) {
+          event.preventDefault();
+          if (navbarContent.classList.contains("collapse")) {
+            navbarContent.classList.remove("collapse");
+          } else {
+            navbarContent.classList.add("collapse");
+          }
+        });
+      document.addEventListener("click", 
+        function(event) {
+          if (navbarContent.classList.contains("collapse")) {
+            navbarContent.classList.remove("collapse");
+          }
+        });
     </script>
 </body>
 </html>
