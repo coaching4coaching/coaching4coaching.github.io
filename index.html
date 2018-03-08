@@ -10,16 +10,28 @@
         .site-content {order:13;}
       }
     </style>
+    <script>
+      var navbarContent = document.getElementById("navbarContent");
+      var navbarToggler = document.getElementById("navbarToggler");
+      navbarToggleraddEventListener("click", 
+      function() {
+        if (navbarContent.classList.contains("collapse")) {
+          navbarContent.classList.remove("mystyle");
+        } else {
+          navbarContent.classList.add("collapse");
+        }
+      });
+    </script>
   </head>
 <body>
     <div>
-      <div class="container">
-        <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="container fixed-top">
+        <nav class="navbar navbar-light bg-light">
           <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="navbarToggler" class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
