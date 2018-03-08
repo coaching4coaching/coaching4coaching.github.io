@@ -10,7 +10,6 @@
       body { margin-top:50px; }
       .youtube {
         position:relative;
-        cursor: pointer;
       }
       .youtube .play-button {
         width: 90px;
@@ -21,6 +20,7 @@
         z-index: 1;
         opacity: 0.8;
         border-radius: 6px;
+        cursor: pointer;
       }
       .youtube .play-button:before {
         content: "";
@@ -37,6 +37,9 @@
           top: 50%;
           left: 50%;
           transform: translate3d( -50%, -50%, 0 );
+      }
+      .youtube img {
+        cursor: pointer;
       }
       .bar {
         width: 25px;
