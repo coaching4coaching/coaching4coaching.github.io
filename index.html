@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Coaching is a process that supposed to help people achieve goals. Person called coache supports and leads the client (called sometime coachee) to achieve given objective. Throughout the sessions, the coach stays neutral and only guids the client." />
     <title>Coaching 4 Coaching</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>body{margin-top:50px}.youtube{position:relative}.youtube .play-button{width:90px;height:60px;background-color:#333;-webkit-box-shadow:0 0 30px rgba(0,0,0,.6);box-shadow:0 0 30px rgba(0,0,0,.6);z-index:1;opacity:.8;border-radius:6px;cursor:pointer}.youtube .play-button:before{content:"";border-style:solid;border-width:15px 0 15px 26px;border-color:transparent transparent transparent #fff}.youtube .play-button,.youtube .play-button:before{position:absolute;top:50%;left:50%;transform:translate3d(-50%,-50%,0)}.youtube img{cursor:pointer}.bar{width:25px;height:2px;background-color:rgba(0,0,0,.5);margin:4px}</style>
   </head>
 <body>
@@ -88,6 +87,22 @@
       </div>
     </div>
     <br/><br/><br/><br/>
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
     <script>var shouldCloseMenu=!1,navbarContent=document.getElementById("navbarContent"),navbarToggler=document.getElementById("navbarToggler");function toggleMenu(e){e.stopPropagation(),navbarContent.classList.contains("collapse")?navbarContent.classList.remove("collapse"):navbarContent.classList.add("collapse")}function closeMenu(e){navbarContent.classList.contains("collapse")||navbarContent.classList.add("collapse")}function loadYoutubeVideo(e,n){e.parentNode.innerHTML='<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="'+n+'" allowfullscreen></iframe></div>'}navbarToggler.addEventListener("click",toggleMenu),document.body.addEventListener("click",closeMenu);</script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115432818-1"></script>
