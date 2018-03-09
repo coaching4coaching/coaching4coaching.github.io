@@ -93,10 +93,7 @@
         addStylesNode.innerHTML = '<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>';
         document.body.appendChild(addStylesNode)
       };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
+      window.addEventListener('load', loadDeferredStyles);
     </script>
     <script>var shouldCloseMenu=!1,navbarContent=document.getElementById("navbarContent"),navbarToggler=document.getElementById("navbarToggler");function toggleMenu(e){e.stopPropagation(),navbarContent.classList.contains("collapse")?navbarContent.classList.remove("collapse"):navbarContent.classList.add("collapse")}function closeMenu(e){navbarContent.classList.contains("collapse")||navbarContent.classList.add("collapse")}function loadYoutubeVideo(e,n){e.parentNode.innerHTML='<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="'+n+'" allowfullscreen></iframe></div>'}navbarToggler.addEventListener("click",toggleMenu),document.body.addEventListener("click",closeMenu);</script>
 </body>
