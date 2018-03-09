@@ -131,9 +131,9 @@
       var navbarContent = document.getElementById("navbarContent");
       var navbarToggler = document.getElementById("navbarToggler");
       navbarToggler.addEventListener('click',toggleMenu);
-      navbarToggler.addEventListener("touchstart", toggleMenu);
+      navbarToggler.addEventListener("tap", toggleMenu);
       document.addEventListener("click", closeMenu);
-      document.addEventListener("touchstart", closeMenu);
+      document.addEventListener("tap", closeMenu);
       function toggleMenu(event)
       {
           event.stopPropagation();
