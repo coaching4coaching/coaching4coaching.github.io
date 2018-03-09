@@ -131,7 +131,7 @@
       var navbarContent = document.getElementById("navbarContent");
       var navbarToggler = document.getElementById("navbarToggler");
       if ('ontouchstart' in document.documentElement) {
-        navbarToggler.addEventListener("touchstart", toggleMenu);
+        navbarToggler.addEventListener('click',toggleMenu);
         document.addEventListener("touchstart", closeMenu);
       } else {
         navbarToggler.addEventListener('click',toggleMenu);
