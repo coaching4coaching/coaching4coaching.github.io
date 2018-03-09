@@ -130,21 +130,25 @@
     <script>
       var navbarContent = document.getElementById("navbarContent");
       var navbarToggler = document.getElementById("navbarToggler");
-      navbarToggler.addEventListener("click", 
-        function(event) {
+      navbarToggler.addEventListener('click',toggleMenu);
+      navbarToggler.addEventListener("touchstart", toggleMenu);
+      document.addEventListener("click", closeMenu);
+      document.addEventListener("touchstart", closeMenu);
+      function toggleMenu(event)
+      {
           event.stopPropagation();
           if (navbarContent.classList.contains("collapse")) {
             navbarContent.classList.remove("collapse");
           } else {
             navbarContent.classList.add("collapse");
           }
-        });
-      document.addEventListener("click", 
-        function(event) {
+      }
+      function closeMenu(event)
+      {
           if (!navbarContent.classList.contains("collapse")) {
             navbarContent.classList.add("collapse");
           }
-        });
+      }
       function loadYoutubeVideo(img, url) {
         img.parentNode.innerHTML = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="' + url + '" allowfullscreen></iframe></div>';
       }
