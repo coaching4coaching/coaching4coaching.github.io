@@ -128,15 +128,11 @@
     </div>
     <br/><br/><br/><br/>
     <script>
+      var shouldCloseMenu = false;
       var navbarContent = document.getElementById("navbarContent");
       var navbarToggler = document.getElementById("navbarToggler");
-      if ('ontouchstart' in document.documentElement) {
-        navbarToggler.addEventListener('click',toggleMenu);
-        document.addEventListener("touchstart", closeMenu);
-      } else {
-        navbarToggler.addEventListener('click',toggleMenu);
-        document.addEventListener("click", closeMenu);
-      }
+      navbarToggler.addEventListener('click',toggleMenu);
+      document.body.addEventListener("click", closeMenu);
       function toggleMenu(event)
       {
           event.stopPropagation();
