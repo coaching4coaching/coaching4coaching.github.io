@@ -87,16 +87,9 @@
       </div>
     </div>
     <br/><br/><br/><br/>
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.createElement("div");
-        addStylesNode.innerHTML = '<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap2.min.css"/>';
-        document.body.appendChild(addStylesNode)
-      };
-      window.addEventListener('load', loadDeferredStyles);
-    </script>
     <script>var shouldCloseMenu=!1,navbarContent=document.getElementById("navbarContent"),navbarToggler=document.getElementById("navbarToggler");function toggleMenu(e){e.stopPropagation(),navbarContent.classList.contains("collapse")?navbarContent.classList.remove("collapse"):navbarContent.classList.add("collapse")}function closeMenu(e){navbarContent.classList.contains("collapse")||navbarContent.classList.add("collapse")}function loadYoutubeVideo(e,n){e.parentNode.innerHTML='<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="'+n+'" allowfullscreen></iframe></div>'}navbarToggler.addEventListener("click",toggleMenu),document.body.addEventListener("click",closeMenu);</script>
 </body>
+</html>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115432818-1"></script>
 <script>
@@ -105,5 +98,11 @@
   gtag('js', new Date());
   gtag('config', 'UA-115432818-1');
 </script>
-</html>
-  
+<script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.createElement("div");
+        addStylesNode.innerHTML = '<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>';
+        document.body.appendChild(addStylesNode)
+      };
+      window.addEventListener('load', loadDeferredStyles);
+    </script>
