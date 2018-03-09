@@ -87,9 +87,24 @@
       </div>
     </div>
     <br/><br/><br/><br/>
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
     <script>var shouldCloseMenu=!1,navbarContent=document.getElementById("navbarContent"),navbarToggler=document.getElementById("navbarToggler");function toggleMenu(e){e.stopPropagation(),navbarContent.classList.contains("collapse")?navbarContent.classList.remove("collapse"):navbarContent.classList.add("collapse")}function closeMenu(e){navbarContent.classList.contains("collapse")||navbarContent.classList.add("collapse")}function loadYoutubeVideo(e,n){e.parentNode.innerHTML='<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="'+n+'" allowfullscreen></iframe></div>'}navbarToggler.addEventListener("click",toggleMenu),document.body.addEventListener("click",closeMenu);</script>
 </body>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115432818-1"></script>
 <script>
